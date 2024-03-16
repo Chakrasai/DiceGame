@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import './Roledice.css';
 import React, { useState } from 'react';
 function Roledice({roledice,dice}) {

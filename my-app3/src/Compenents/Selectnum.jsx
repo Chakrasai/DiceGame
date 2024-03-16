@@ -1,6 +1,5 @@
 import React from 'react'
 import './Selectnum.css'
-import styled from 'styled-components';
 function Selectnum({ error,selectnum,setselectnum} ) {
   // const [selectnum,setselectnum] = useState(0);
   // console.log(selectnum);
@@ -27,9 +26,5 @@ function Selectnum({ error,selectnum,setselectnum} ) {
 
 export default Selectnum;
 
-const selectnumber = styled.div`
-  font-size: 200px;
-  font-weight: bold;
-  color: red;
-  `;
+
 
