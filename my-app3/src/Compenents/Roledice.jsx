@@ -6,11 +6,7 @@ function Roledice({roledice,dice}) {
     // const generateRandom = (min,max) => {
     //     // console.log(Math.floor(Math.random() * (max - min + 1) + min));
     //     return Math.floor(Math.random() * (max - min + 1) + min);
-    // }
-    // const roledice = () => {
-    //     const random = generateRandom(1,6);
-    //     setdice(prev => random);
-    // }
+   
 
   return (
       <dicecontainer>
