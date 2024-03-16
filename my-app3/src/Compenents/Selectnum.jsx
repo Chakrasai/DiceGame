@@ -1,8 +1,7 @@
 import React from 'react'
 import './Selectnum.css'
 function Selectnum({ error,selectnum,setselectnum} ) {
-  // const [selectnum,setselectnum] = useState(0);
-  // console.log(selectnum);
+
   const arrnumber = [1,2,3,4,5,6];
   return (
    
