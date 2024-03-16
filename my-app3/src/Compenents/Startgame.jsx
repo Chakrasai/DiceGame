@@ -4,7 +4,7 @@ const Startgame = ({toggle}) => {
   return (
     <a>
     <div className='container'>
-        <div className='logo'><img src='dicehero.png' alt='dice'/></div>
+        <div className='logo'><img src='https://i.postimg.cc/PqtJscSS/dicehero.png' alt='dice'/></div>
         <div className='details'>
             <div className='title'>DICE GAME</div>
             <button onClick={toggle} 
@@ -17,3 +17,4 @@ const Startgame = ({toggle}) => {
 }
 
 export default Startgame;
+

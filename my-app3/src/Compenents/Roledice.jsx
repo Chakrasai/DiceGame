@@ -1,15 +1,13 @@
 import './Roledice.css';
-import React, { useState } from 'react';
-function Roledice({roledice,dice}) {
- 
+import React from 'react';
 
+
+function Roledice({roledice,dice}) {
   return (
       <dicecontainer>
-        <div className='dice' onClick={roledice}><img src={`d${dice}.png`}/></div>
+        <div className='dice' onClick={roledice}><img src={`${dice}`}/></div>
         <p>click on dice</p>
-
       </dicecontainer>
-
   )
 }
 export default Roledice;

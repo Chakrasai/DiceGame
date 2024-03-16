@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Totalscore from './Totalscore';
 import Selectnum  from './Selectnum';
 import './Gamestart.css';
@@ -9,14 +9,25 @@ function Gamestart() {
   const [error, seterror] = useState('');
   const [score, setscore] = useState(0);
   const [selectnum,setselectnum] = useState(0);
+  const dices = [
+  "https://i.postimg.cc/sfMmS03Q/d1.png",
+  "https://i.postimg.cc/HknvZsgz/d2.png",
+  "https://i.postimg.cc/0QYVMzYk/d3.png",
+  "https://i.postimg.cc/c49Xnynn/d4.png",
+  "https://i.postimg.cc/Gh2jr75h/d5.png",
+  "https://i.postimg.cc/pLjzXgYx/d6.png"
+]
   const [dice, setdice] = useState(1);
   const [showrules,setshowrules] = useState(false);
 
   
   const generateRandom = (min,max) => {
-    // console.log(Math.floor(Math.random() * (max - min + 1) + min));
-    return Math.floor(Math.random() * (max - min + 1) + min);
+    const x = (Math.floor(Math.random() * (max - min + 1 ) + min));
+    return x;
 }
+useEffect(()=>{
+  console.log()
+})
 const roledice = () => {
   if(!selectnum){
     return;
@@ -35,7 +46,6 @@ const roledice = () => {
   }
   const toggleshowrules = () => {
     setshowrules((prev) => !prev);
-
   }
 
   return (
@@ -47,7 +57,7 @@ const roledice = () => {
       setselectnum = {setselectnum}/></div>
     </div>
      <Roledice 
-     dice = {dice}
+     dice = {dices[dice-1]}
      roledice={roledice}/>
      <div className='rulebuttons'>
       <button onClick={resetscore}>Reset</button>
