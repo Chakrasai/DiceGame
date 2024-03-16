@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100px;
+    width: 100%;
+    background-color: rgb(15, 241, 241);
+    position: fixed;
+
+}
+button {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-right: 20px;
+    background-color: rgb(255, 71, 71);
+}
+.brandlogo img {
+    object-fit: contain;
+    width: 100%; /* You can adjust this as needed */
+    height: auto; /* You can adjust this as needed */
+    padding: 0px 10px 15px 20px;
+    height: 90px;
+    width: 90px;
+    background: transparent;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width:300px;
+    margin-right: 20px;
+    list-style: none;
+}
+.h{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 100px;
+    margin-right: 400px;
+    height: 300px;
+    width: 600px;
+}
+.herocontent h1{
+    font-size: 60px;
+
+}
+.himage{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
