@@ -20,7 +20,6 @@ function Gamestart() {
   const [dice, setdice] = useState(1);
   const [showrules,setshowrules] = useState(false);
 
-  
   const generateRandom = (min,max) => {
     const x = (Math.floor(Math.random() * (max - min + 1 ) + min));
     return x;
