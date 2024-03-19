@@ -1,0 +1,9 @@
+.body{
+    background-color: #00000100;
+    color: white;
+}
+foodcontainer {
+    background-image: url('C:\WEBDEV\my-app4\public\bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
