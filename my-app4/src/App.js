@@ -4,15 +4,15 @@ import Foodcontainer from './components/Foodcontainer';
 import Navigation from './components/Navigation';
 
 function App() {
-  const [search,setsearch] = useState('');
-  const handlesearch = ((e) => {
-    setsearch(e.target.value);
+  const [search,setsearch] = useState("");
+  const handlesearch = ((event) => {
+      setsearch(event.target.value);
   })
   return (
     <div>
       <Navigation />
       <div>
-        <Foodcontainer search = {search}/>
+        <Foodcontainer search = {search} handlesearch ={handlesearch}/>
       </div>
     </div>
   );

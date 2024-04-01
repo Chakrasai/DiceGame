@@ -17,8 +17,8 @@ function Navigation() {
         type="text" 
         placeholder="Search.."
         value = {search}
-        onChange={handlesearch}/>
-        <button>search</button></div>
+        onChange = {handlesearch}/>
+        <button onClick={handlesearch}>search</button></div>
     </div>
     <Details /> 
     </div>
